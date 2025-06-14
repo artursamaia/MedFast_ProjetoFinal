@@ -1,0 +1,101 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #CCCCCC;
+    transition: margin-left .5s;
+}
+
+.main-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #A4C79F;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.main-header h3 {
+    margin: 0 0 0 20px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 55px; /*Inicialmente com o Menu Fechado*/
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #A4C79F;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 9px 15px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #ffffff;
+}
+
+.sidebar a .material-symbols-outlined {
+    margin-right: 15px;
+}
+
+.menu-toggle {
+    position: fixed; /*Alterar para static, porem precisa ter como fechar o menu lateral*/
+    color: white;
+    top: 15px;
+    left: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.content {
+    transition: margin-left .5s;
+    padding: 16px;
+    margin-top: 60px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.main-image {
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.simple-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.simple-button:hover {
+    background-color: #0056b3;
+}
