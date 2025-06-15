@@ -11,9 +11,9 @@ body {
     top: 0;
     left: 0;
     background-color: #A4C79F;
-    color: white;
+    color: 1E5D1E;
     padding: 10px 20px;
-    display: flex;
+    display: center;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
@@ -35,17 +35,37 @@ body {
     width: 48px;
 }
 
+/*
 .main-header h3 {
     margin: 0 0 0 20px;
+} */
+
+.menu-toggle {
+    position: fixed; /*Alterar para static, porem precisa ter como fechar o menu lateral*/
+    color: rgb(0, 0, 0);
+    padding: 0px;
+    top: 60px;
+    left: 0px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.menu-toggle :hover{
+    color: #ffffff;
+}
 
 .sidebar {
-    height: 100%;
+    height: calc(100% - 60px);
     width: 55px; /*Inicialmente com o Menu Fechado*/
     position: fixed;
-    z-index: 1;
-    top: 0;
+    z-index: 2;
+    top: 60px;
     left: 0;
     background-color: #A4C79F;
     overflow-x: hidden;
@@ -69,22 +89,7 @@ body {
 
 .sidebar a .material-symbols-outlined {
     margin-right: 15px;
-}
-
-.menu-toggle {
-    position: fixed; /*Alterar para static, porem precisa ter como fechar o menu lateral*/
-    color: white;
-    padding: 0px;
-    top: 0px;
-    left: 0px;
-    background: none;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    z-index: 3;
 }
 
 .content {
@@ -108,15 +113,16 @@ body {
 
 .simple-button {
     padding: 15px 30px;
-    font-size: 18px;
+    font-size: 17px;
     color: #ffffff;
-    background-color: #007BFF;
+    background-color: #1E5D1E;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .simple-button:hover {
-    background-color: #0056b3;
+    color: #000000;
+    background-color: #A4C79F;
 }
