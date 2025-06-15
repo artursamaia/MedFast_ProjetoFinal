@@ -6,7 +6,7 @@
     <title> Formulario Paciente </title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
-  <body>
+  <body id="page-form">
    <header class="main-header">
     <button class="menu-toggle">
         <span class="material-symbols-outlined"><img src="/assets/icons/Icon Menu.svg" alt="ErrIcon">Menu</span>
@@ -27,15 +27,40 @@
    </header>
 
     <main class="content">
-        <div class="main-content">
-            <div class="text-content">
-                <h3>Prencha o Formulario de Cadastro Abaixo:</h3>
-                <button class="simple-button">Enviar</button>
-            </div>
-        <img src="/assets/imagens/Imagem  Ilustrativa.svg" alt="FotoError" class="main-image">
-    </div>
+        <div class="form-container">
+                <h1>Formulario de Cadastro</h1>
+                <p>Prencha o Formulario de Cadastro Abaixo:</p>
+            <form action="#" method="POST">
+                <div class="form-cad">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome_completo" required placeholder="Digite Seu Nome">
+                </div>
+                <div class="form-cad">
+                    <label for="cpf">CPF</label>
+                    <input id="cpf" type="number" name="cpf_usuario" required placeholder="000.000.000-00">
+                </div>
+                <div class="form-cad">
+                    <label for="telefone">Telefone:</label>
+                    <input id="telefone" type="tel" name="telefone_usuario" required placeholder="(99) 99999-9999">
+                </div>
+                <div class="form-cad">
+                    <label for="observacoes">Observações Pessoais:</label>
+                    <textarea id="observacoes" name="observacoes_usuario" rows="4" placeholder="Informe aqui seus sintomas, medicamentos que já tomou ou qualquer informação adicional que julgar necessaria"></textarea>
+                </div>
+                <div class="form-cad">
+                    <label for="senha">Senha:</label>
+                    <input id="senha" type="password" name="senha_user" required placeholder="Crie uma Senha">
+                </div>
+                <div class="form-cad">
+                    <label for="repet-senha">Confirmar Senha</label>
+                    <input id="repet-senha" type="password" name="confirm_senha_user" required placeholder="Confirme sua Senha">
+                </div>
 
-    
+
+
+                <button type="submit" class="simple-button">Enviar</button>
+            </form>
+        </div>
     </main>
 
 

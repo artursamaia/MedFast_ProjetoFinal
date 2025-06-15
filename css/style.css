@@ -141,3 +141,24 @@ body {
     height: auto;
     border-radius: 8px;
 }
+
+#page-form  .form-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 25px;
+    background-color: #949191;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#page-form .content h1 {
+    text-align: center;
+    color: #000;
+    font-size: 28px;
+}
+
+#page-form .content p {
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+}
